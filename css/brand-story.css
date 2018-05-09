@@ -1,0 +1,230 @@
+.brand-story-content{
+	width:80.56%;
+	height:1754px;
+	margin-left:10.625%;
+}
+.brand-story-content-1{
+	width:66.38%;
+	height:1704px;
+	margin-top: 12px;
+	float: left;
+}
+.brand-story-content-2{
+	width:24.56%;
+	height: 1704px;
+	float:right;
+}
+.brand-story-content-1-title{
+	font-family: Helvetica;
+  	font-size: 30px;
+  	text-align: left;
+  	color: #272220;
+}
+.brand-story-name{
+	margin-top: 39px;
+	height:62px;
+	border-top: solid 1px #979797;
+	border-bottom: solid 1px #979797;
+}
+.brand-story-personal-img{
+	width:5.51%;
+	height:40px;
+	margin-left: 2%;
+	margin-top: 11px;
+}
+.brand-story-personal-name{
+	font-family: Helvetica;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #d6561d;
+}
+.brand-story-personal-position{
+	margin-left: 2.89%;
+	width:80%;
+	font-family: Helvetica;
+  	font-size: 15px;
+  	line-height: 1.6;
+  	color: #000000;
+}
+.brand-story-personal-induction{
+	width::2.72%;
+	height:96px;
+	margin-top: 35px;
+	margin-left: 2.89%;
+	font-family: Helvetica;
+  	font-size: 15px;
+  	line-height: 1.6;
+  	color: #7b726f;
+}
+.brand-story-personal-pic1{
+	width:94.15%;
+	height:403px;
+	margin-top: 31px;
+	margin-left: 3.76%;
+}
+.brand-story-content-1-title-2{
+	font-family: Helvetica;
+  font-size: 24px;
+  text-align: center;
+  color: #272220;
+  margin-top: 65px;
+}
+.brand-story-personal-pic2{
+	width:97.14%;
+	margin-left: 2.46%;
+	height:425px;
+	margin-top: 31px;
+}
+.brand-story-page-share{
+	font-family: Helvetica;
+  	font-size: 15px;
+  	line-height: 3;
+  	color: #000000;
+  	text-align: center;
+}
+.Rectangle-content22 ul{
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
+.Rectangle-divider{
+	width:100%;
+	height: 18px;
+  background-color: #f8f7f5;
+}
+.brand-story-comment{
+	font-family: Helvetica;
+  font-size: 24px;
+  text-align: left;
+  color: #272220;
+  margin-top: 83px;
+  margin-bottom: 37px;
+}
+.brand-story-text-area{
+	height:200px;
+	width: 97.79%;
+	margin-top: 63.1px;
+}
+.brand-story-text-area-1{
+	width:100%;
+	height:50px;
+}
+.brand-story-text-area-pic{
+	width:20.21%;
+	height:25px;
+	float: left;
+}
+.brand-story-text-area-select1{
+	float:left;
+	font-family: BellMT;
+  	font-size: 23.4px;
+  	color: #4a4a4a;
+  	margin-left: 10.55%;
+}
+.brand-story-text-area-1 select{
+	float:left;
+	margin-left: 2%;
+	width: 12.53%;
+ 	height: 30.8px;
+  	border-radius: 4.7px;
+  	background-color: #ffffff;
+  	border: solid 0.9px #dddddd;
+  	font-family: PingFangSC;
+  	font-size: 16.9px;
+  	line-height: 1.67;
+  	text-align: left;
+  	color: #262626;
+}
+.brand-story-text-area-block{
+	width:100%;
+	height:146.6px;
+	border: solid 1.6px #bebebe;;
+}
+.brand-story-text-area-block textarea{
+	width: 100%;
+	height:100%;
+	font-family: OpenSans;
+  	font-size: 20.3px;
+  	font-style: italic;
+  	line-height: 2.31;
+  	text-align: left;
+  	color: #898989;
+}
+.brand-story-text-post{
+	font-family: HelveticaNeue;
+	margin-top: 18.7px;
+  	font-size: 18.7px;
+  	font-weight: bold;
+  	text-align: center;
+  	color: #ffffff;
+  	width: 25.31%;
+  	height: 43.7px;
+  	line-height: 43.7px;
+  	background-color: #ff7959;
+  	float:right;
+  	cursor: pointer;
+}
+.brand-story-text-line{
+	height:145px;
+	width:100%;
+	float:left;
+	border-bottom: solid 0.7px #9b9b9b;
+}
+.brand-story-record{
+	width:100%;
+	height: 63px;
+	margin-top: 48.5px;
+	float: left;
+}
+.brand-story-arror{
+	width: 3.89%;
+	height:51px;
+	float: left;
+}
+.brand-story-previous{
+	width:38.44%;
+	height:100%;
+	float: left;
+}
+.brand-story-previous ul li{
+	width:100%;
+	height:12px;
+}
+.more-stories{
+	width:100%;
+	font-family: Helvetica;
+  	font-size: 24px;
+  	text-align: left;
+  	color: #272220;
+  	float: left;
+  	margin-top:55.5px;
+}
+.more-stories-pic{
+	width:100%;
+	height:337px;
+	float: left;
+	margin-top: 31px;
+}
+.more-stories-pic1{
+	width:29%;
+	height:320px;
+	border: solid 0.7px #9b9b9b;
+	float: left;
+	margin-top:5px;
+	margin-left: 8px;
+	margin-right: 15px;
+}
+.more-stories-pic1-1{
+	width:90%;
+	height:200px;
+	margin-top:15px;
+	margin-left: 5%;
+}
+.more-stories-pic1-text{
+	margin-top:15px;
+	margin-left: 5%;
+	font-family: Helvetica;
+  font-size: 16px;
+  text-align: left;
+  color: #272220;
+  line-height: 24px;
+}

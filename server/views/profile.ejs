@@ -1,0 +1,210 @@
+<!doctype html>
+<html>
+<head>
+    <title>Node Authentication</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <!-- web socket for messanging -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.0/socket.io.dev.js"></script>
+    <!-- messaging app -->
+    <!--script type="text/javascript" src="public/assets/chat.js"></script-->
+
+    <style>
+        body         { padding-top:80px; word-wrap:break-word; }
+        #chat{
+            max-width: 600px;
+            margin: 30px auto;
+            border: 1px solid #ddd;
+            box-shadow: 1px 3px 5px rgba(0,0,0,0.05);
+            border-radius: 2px;
+        }
+
+        #chat-window{
+            height: 400px;
+            overflow: auto;
+            background: #f9f9f9;
+        }
+
+        #output p{
+            padding: 14px 0px;
+            margin: 0 20px;
+            border-bottom: 1px solid #e9e9e9;
+            color: #555;
+        }
+
+        input{
+            padding: 10px 20px;
+            box-sizing: border-box;
+            background: #eee;
+            border: 0;
+            display: block;
+            width: 100%;
+            background: #fff;
+            border-bottom: 1px solid #eee;
+            font-family: Nunito;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <div class="page-header text-center">
+        <h1><span class="fa fa-anchor"></span> Profile Page</h1>
+        <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+    </div>
+
+    <div class="row">
+
+        <!-- LOCAL INFORMATION -->
+        <div class="col-sm-6">
+            <div class="well">
+                <h3><span class="fa fa-user"></span> Local</h3>
+                
+                <% if (user.local.email) { %>
+                    <p>
+                        <strong>id</strong>: <%= user._id %><br>
+                        <strong>username</strong>: <%= user.local.username %><br>
+                        <strong>email</strong>: <%= user.local.email %><br>
+                        <strong>password</strong>: <%= user.local.password %>
+                    </p>
+                    
+                    <!-- local accounts should not be unlinked so I commented this out -->
+                    <!-- a href="/unlink/local" class="btn btn-default">Unlink</a -->
+                <% } else { %>
+                    <a href="/connect/local" class="btn btn-default">Connect Local</a>
+                <% } %>
+
+            </div>
+        </div>
+
+        <!-- FACEBOOK INFORMATION -->
+        <div class="col-sm-6">
+            <div class="well">
+                <h3 class="text-primary"><span class="fa fa-facebook"></span> Facebook</h3>
+
+                <!-- check if the user has this token (is the user authenticated with this social account) -->
+                <% if (user.facebook.token) { %>
+                    <p>
+                        <strong>id</strong>: <%= user.facebook.id %><br>
+                        <strong>token</strong>: <%= user.facebook.token %><br>
+                        <strong>email</strong>: <%= user.facebook.email %><br>
+                        <strong>name</strong>: <%= user.facebook.name %><br>
+                    </p>
+
+                    <a href="/unlink/facebook" class="btn btn-primary">Unlink</a>
+                <% } else { %>
+                    <a href="/connect/facebook" class="btn btn-primary">Connect Facebook</a>
+                <% } %>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+
+        <!-- TWITTER INFORMATION -->
+        <div class="col-sm-6">
+            <div class="well">
+                <h3 class="text-info"><span class="fa fa-twitter"></span> Twitter</h3>
+
+                <% if (user.twitter.token) { %>
+                    <p>
+                        <strong>id</strong>: <%= user.twitter.id %><br>
+                        <strong>token</strong>: <%= user.twitter.token %><br>
+                        <strong>display name</strong>: <%= user.twitter.displayName %><br>
+                        <strong>username</strong>: <%= user.twitter.username %>
+                    </p>
+
+                    <a href="/unlink/twitter" class="btn btn-info">Unlink</a>
+                <% } else { %>
+                    <a href="/connect/twitter" class="btn btn-info">Connect Twitter</a>
+                <% } %>
+
+            </div>
+        </div>
+
+        <!-- GOOGLE INFORMATION -->
+        <div class="col-sm-6">
+            <div class="well">
+                <h3 class="text-danger"><span class="fa fa-google-plus"></span> Google+</h3>
+
+                <% if (user.google.token) { %>
+                    <p>
+                        <strong>id</strong>: <%= user.google.id %><br>
+                        <strong>token</strong>: <%= user.google.token %><br>
+                        <strong>email</strong>: <%= user.google.email %><br>
+                        <strong>name</strong>: <%= user.google.name %>
+                    </p>
+
+                    <a href="/unlink/google" class="btn btn-danger">Unlink</a>
+                <% } else { %>
+                    <a href="/connect/google" class="btn btn-danger">Connect Google</a>
+                <% } %>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="chat">
+        <div id="chat-window">
+            <div id="notification"></div>
+            <div id="output">
+
+            </div>
+
+        </div>
+        <!--input type="text" id="handle" placeholder="Handle"-->
+        <h4 id="handle" style="padding: 0.5em;"><%= user.local.username %></h4>
+        <input type="text" id="message" placeholder="Message">
+        <button id="send" class="btn btn-primary">SEND</button>
+    </div>
+
+    
+    <script>
+        
+        // Make connection from front end
+        var socket = io.connect('http://localhost:4000');
+        
+
+        // Query Dom
+        var message = document.getElementById('message'),
+            handle = document.getElementById('handle'),
+            btn = document.getElementById('send'),
+            output = document.getElementById('output'),
+            notification = document.getElementById('notification');
+
+        console.log(handle);
+        console.log(handle.innerHTML);
+
+        // Emit event
+
+        btn.addEventListener('click',function(){
+            socket.emit('chat', {
+                message: message.value,
+                handle: handle.innerHTML
+            });
+        });
+
+        message.addEventListener('keypress', function(){
+            socket.emit('typing', handle.innerHTML);
+        });
+
+        // listen for events
+        socket.on('chat', function(data){
+            notification.innerHTML = '';
+            message.value = '';
+            output.innerHTML += '<p><strong> ' + data.handle + ' </strong>'
+            + data.message + ' </p>';
+        });
+
+        socket.on('typing', function(data){
+            notification.innerHTML = '<p><em>' + data + ' is typing a message... </em></p>';
+        })
+
+    
+    </script>
+</div>
+</body>
+</html>

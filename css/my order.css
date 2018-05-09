@@ -1,0 +1,365 @@
+.my-order-content{
+	width: 14.75%;
+	margin-left: 8.3%;
+	height:1318px;
+	float:left;
+	margin-top: 10px;
+}
+
+.my-order-content-1{
+	width:100%;
+	height:320px;
+	background-color: white;
+}
+
+.my-order-content-2{
+	width: 66.375%;
+  height: 1365px;
+  float:left;
+  margin-left:3%;
+  margin-top:10px;
+  background-color: #f8f7f5;
+}
+.shopping-cart-check-out-1{
+	clear:both;
+	width: 10%;
+  height: 40px;
+  float: left;
+  background-color: #000000;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: left;
+  color: #ffffff;
+  text-align: center;
+  line-height: 40px;
+  margin-top:24px;
+  margin-bottom: 0;
+  margin-left: 10%;
+  color: #ffffff;
+}
+
+.shopping-cart-check-out-1:hover{
+	 background-color: #ffffff;
+	 color: #000000;
+	 font-size: 16px;
+	 cursor: pointer;
+	  border: solid 1px #000000;
+}
+.screenshot-wwwyamibuycom-2017-03-30-13-20-48 {
+  	width:100%;
+  	height: 684px;
+  	background-color: white;
+  	float: left;
+}
+
+.my-order-title{
+  width: 100%;
+  height: 106px;
+  font-family: BellMT;
+  font-size: 28px;
+  text-align: center;
+  color: #272220;	
+  line-height: 106px;
+}
+.my-order-table-title{
+	background-color: #f5f5f5;
+	width:94%;
+	margin-left: 3%;
+	height: 90px;
+	border:solid 0.6px #9b9b9b;
+}
+
+.my-order-table-title-1{
+	margin-left: 3.19%;
+	width: 20.89%;
+	height:20px;
+	font-family: Helvetica;
+    font-size: 15px;
+    text-align: left;
+    color: #272220;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.account-setting-aboutYou{
+   font-family: Helvetica;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: left;
+  color: #323232;
+  margin-top: 31px;
+  margin-left: 10%;
+}
+.my-order-table-title-2{
+	float: left;
+	width: 20.89%;
+	height:20px;
+	margin-left: 3.19%;
+	font-family: Helvetica;
+    font-size: 15px;
+    text-align: left;
+    color: #272220;
+    margin-top: 15px;
+}
+.first-Name{
+  width: 17.1%;
+  margin-top: 17px;
+  margin-left: 10%;
+  height: 35px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+  border-style: solid;
+  border-width: 1px;
+  border-image-source: linear-gradient(to bottom, #a1a09e, #c6c4c1);
+  border-image-slice: 1;
+  font-family: Helvetica;
+  font-size: 13px;
+  text-align: left;
+  color: #323232;
+}
+.last-Name{
+  width: 17.1%;
+  margin-top: 17px;
+  margin-left: 1%;
+  height: 35px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+  border-style: solid;
+  border-width: 1px;
+  border-image-source: linear-gradient(to bottom, #a1a09e, #c6c4c1);
+  border-image-slice: 1;
+  font-family: Helvetica;
+  font-size: 13px;
+  text-align: left;
+  color: #323232;
+}
+.email{
+	display: inline;
+  clear: both;
+  width: 36.1%;
+  margin-top: 17px;
+  margin-left: 10%;
+  margin-right:50%;
+  height: 35px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+  border-style: solid;
+  border-width: 1px;
+  border-image-source: linear-gradient(to bottom, #a1a09e, #c6c4c1);
+  border-image-slice: 1;
+  font-family: Helvetica;
+  font-size: 13px;
+  text-align: left;
+  color: #323232;
+}
+.password{
+  width:24%;
+  margin-left: 10%;
+  margin-top: 17px;
+  font-family: Helvetica;
+  font-size: 13px;
+  text-align: left;
+  color: #323232;
+  font-weight: bolder;
+  height: 35px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+  border-style: solid;
+  border-width: 1px;
+  border-image-source: linear-gradient(to bottom, #a1a09e, #c6c4c1);
+  border-image-slice: 1;
+}
+.passwordConfirmation{
+  width:24%;
+  margin-left: 1%;
+  margin-top: 17px;
+  height: 35px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+  border-style: solid;
+  border-width: 1px;
+  border-image-source: linear-gradient(to bottom, #a1a09e, #c6c4c1);
+  border-image-slice: 1;
+  font-family: Helvetica;
+  font-size: 13px;
+  text-align: left;
+  color: #b0b0b0;
+}
+.my-order-parts-shipped{
+	width:28%;
+	height: 450px;
+	margin-left: 3%;
+	float: left;
+	border-left:solid 0.6px #9b9b9b;
+	border-right: solid 0.6px #9b9b9b;
+	border-bottom: solid 0.6px #9b9b9b;
+}
+
+.my-order-parts-shipped-text-1{
+	clear:both;
+	margin-left: 11%;
+	margin-top:15px;
+	font-family: Helvetica;
+    font-size: 15px;
+    text-align: left;
+    color: #272220;
+}
+
+.my-order-parts-shipped-text{
+	clear:both;
+	margin-left: 11%;
+	margin-top:20px;
+	font-family: Helvetica;
+    font-size: 15px;
+    text-align: left;
+    color: #272220;
+}
+
+.my-order-parts-shipped-text .text-area-1{
+	color:#f43d11;
+}
+
+.my-order-parts-list{
+	width: 66%;
+	height:450px;
+	float: left;
+	border-right:solid 0.6px #9b9b9b;
+	border-bottom: solid 0.6px #9b9b9b;
+}
+
+.shopping-cart-thead{
+	margin-top: 50px;
+	height:33px;
+	width:94%;
+	margin-left: 3%;
+	border-bottom: solid 2px #4a4a4a;
+}
+.shopping-cart-font{
+	font-family: BellMT;
+  font-size: 15px;
+  text-align: center;
+  color: #272220;
+}
+
+.shopping-cart-table-font{
+	font-family: Helvetica;
+  font-size: 13px;
+  text-align: center;
+  color: #272220;
+  margin-top:14px;
+  text-align: center;
+  line-height: 100px;
+}
+
+.shopping-cart-table{
+	width:94%;
+	margin-left: 3%;
+	height:145px;
+	border-bottom:solid 1.4px #9b9b9b;
+}
+
+.shopping-cart-item{
+	width:15.52%;
+	height:125px;
+}
+
+.shopping-cart-productsName{
+	width:30.09%;
+	height:107px;
+}
+
+.shopping-cart-price{
+	width:16.96%;
+	height:107px;
+}
+
+.shopping-cart-qty{
+	width:12.96%;
+	height:107px;
+}
+
+.shopping-cart-total{
+	height:107px;
+}
+.shopping-cart-check-out{
+	clear:both;
+	width: 25%;
+  height: 40px;
+  float: right;
+  background-color: #ff7959;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 40px;
+  margin-top:15px;
+  margin-bottom: 0;
+  margin-right: 20px;
+  color: #ffffff;
+}
+
+.shopping-cart-check-out:hover{
+	 background-color: #ffffff;
+	 color: #ff7959;
+	 font-size: 16px;
+	 cursor: pointer;
+	  border: solid 1px #ff7959;
+}
+.my-order-content-1 ul li:hover{
+	 color: #d0021b;
+	 cursor:pointer;
+}
+
+.my-order-content-1 ul li img{
+	width: 50.19%;
+	height: 62px;
+	margin-left: 55%;
+	margin-top: 27px;
+}
+.my-order-content-1-myMary{
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: #39393a;
+  clear:both;
+  margin-top: 13px;
+  margin-left: 40%;
+}
+
+.my-order-content-1-myOrders{
+  font-family: BellMT;
+  font-size: 15px;
+  color: #4a4a4a;
+    clear:both;
+    margin-top: 39px;
+    margin-left: 34%;
+}
+.my-order-content-1-myOrders a{
+	text-decoration:none;
+	color:#4a4a4a;
+}
+.my-order-content-1-myOrders a:hover{
+	color:#d0021b;
+}
+
+.my-order-content-1-accountSetting{
+  font-family: BellMT;
+  font-size: 15px;
+  color: #4a4a4a;
+  clear:both;
+  margin-top: 12px;
+  margin-left: 25%;
+}
+.my-order-content-1-accountSetting a{
+	text-decoration:none;
+	color:#4a4a4a;
+}
+.my-order-content-1-accountSetting a:hover{
+	color:#d0021b;
+}

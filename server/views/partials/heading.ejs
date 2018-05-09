@@ -1,0 +1,107 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+        
+        <!--main_page.css-->
+        <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+
+        
+        <style>
+
+        </style>
+    </head>
+    <body>
+        
+        <div id="topbar">
+            <p class="text-center">top bar text</p>
+        </div>
+
+        <br>
+	
+        <div class="container-fluid" style="width:80%;">
+        
+        <div class="row" >
+            <!-- search box -->
+            <div class="col-md-3 text-center">
+            <br><br>
+            <!--fixed the position of search icon when page is resized-->
+                <form role="form" class="container text-center"> 
+                  <div class="container form-group has-feedback text-center" id="search-block">
+                    <!--label class="control-label sr-only"> </label-->
+                    <input id="search" type="text" class="form-control">
+                    <i class="form-control-feedback fa fa-search" id="search-icon"></i>
+                  </div>
+                </form>
+    
+            </div>
+            
+            <div class="col-md-6 text-center">
+                <a href="main_page_v0.1.html"><img class="mx-auto img-fluid" src="/assets/imgs/icon.png"/></a>
+                <p style="color:#e66b8c; letter-spacing: 1.2px;"></p>
+                <p style="color:#e66b8c; letter-spacing: 1.2px;">Influence-based Short Video Commerce Platform</p>
+            </div>
+            
+            
+            <div class="col-md-3 text-center">
+            <br><br>
+            <!--cart and notification should be displayed after user has signed in?-->
+                <a href="/login" >LOGIN / SIGN UP </a>
+    
+                
+                <!--cart-->
+                <a href="./shopping_cart.html" id="cart"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true" style="color: #e56a8b"> </i></a>
+                <div class="dropdown open"  id="notification" >
+                    <button role="button" type="button"  data-toggle="dropdown" style="background-color: white; border-width: 0; "> 
+                    <i class="fa fa-bell-o fa-2x" aria-hidden="true" style="color: #e56a8b"> </i></button>
+                    <div class="dropdown-menu dropdown-menu-right" style="padding: 1em; width: 20em;">
+                        <h5>Notifications</h5>
+                        <div class="dropdown-divider"></div>
+                        
+                        
+                        <div class="dropdown-item" style="padding: 0.1em;">
+                            <img src="usericon.jpg" style="width: 3em; height: 3em; border-radius: 50%; float:left;">
+                            <p class="small"><b>user name</b>
+                                <br>notificatioin text</p>
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        
+                        <div class="dropdown-item" style="padding: 0.1em;">
+                            <img src="usericon.jpg" style="width: 3em; height: 3em; border-radius: 50%; float:left;">
+                            <p class="small"><b>user name</b>
+                                <br>notificatioin text</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <br>
+        
+        <!--new navigation bar-->
+        <div class="row" >
+            <div class="col-lg-8 row">
+                <div class="col text-center"><a href="main_page_v0.1.html">TOP VEDIOS</a></div>
+                <div class="col text-center"><a href="category.html">CATEGORY</a></div>
+                <!--div class="col text-center"><a href="latest_story.html">LATEST STORY </a></div-->
+                <div class="col text-center"><a href="coco_star.html">COCO STAR</a></div>
+                <div class="col text-center"><a href="coco_cash.html">COCO CASH</a></div>
+            </div>
+            <div class="col-lg-2"></div>
+            <div class="col-lg-2">
+                <div style="float: right;" ><a href="sell_on_coco.html">SELL ON COCO</a></div>
+            </div>
+        </div>
+        
+        
+        </div>
+
+    </body>
+</html>
+

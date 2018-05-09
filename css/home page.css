@@ -1,0 +1,199 @@
+.mask{
+	width:100%;
+	height:5050px;
+	position: absolute;
+	z-index: 1000;
+	background-color: #000000;
+	filter: opacity(24%);
+	display: block;
+}
+.adv{
+	width:50.28%;
+	height: 491px;
+	margin-left: 25%;
+	margin-top: 489px;
+	position: absolute;
+	z-index: 2000;
+	display: block;
+}
+.mask-close-button{
+  width: 12.77%;
+  height: 42px;
+  line-height: 42px;
+  margin-left: 43.61%;
+  margin-top: 860px;
+  background-color: #000000;
+  font-family: BellMT;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  position: absolute;
+  z-index: 3000;
+  display: block;
+}
+.mask-close-button:hover{
+	color: #000000;
+	background-color: #ffffff;
+	cursor: pointer;
+	border:solid 1px #000000;
+}
+.home-page-bigpic {
+  width: 100%;
+  height: 542px;
+  background-color: black;
+}
+.product-list-content{
+	margin-left: 10.83%;
+	width: 78.34%;
+	height: 500px;
+	margin-bottom: 15px;
+	border-bottom:solid 3px #d9d9d9;;
+}
+.product-list-content-1{
+	width:64.47%;
+	height:;
+	margin-left: 35.53%;
+	margin-top: 78px;
+	font-family: BellMT;
+  	font-size: 22px;
+  	text-align: center;
+  	color: #272220;
+}
+
+.See-More {
+  font-family: BellMT;
+  font-size: 16px;
+  text-align: left;
+  float: right;
+  color: #f43d11;
+}
+
+.product-list-content-2{
+	width: ;
+	height: 500px;
+}
+.product-list-content-arror{
+	width:10px;
+	height:20px;
+	float: left;
+	margin-top: 15%;
+}
+.product-list-content-2-line{
+	width:100%;
+	height:351px;
+	margin-top: 70px;
+	float: left;
+}
+
+.product-list-content-2-single{
+	width:18.95%;
+	height: 351px;
+	margin-left: 5.8%;
+	float: left;
+}
+
+.product-list-content-2-single-1{
+	width:29.31%;
+	height:58px;
+
+}
+.product-list-content-2-single-2{
+	width:12.10%;
+	height:183px;
+	position: absolute;
+	margin-top: 42px;
+	margin-left: 1.6%;
+	float: left;
+}
+.product-list-content-2-single-3{
+	width: 100%;
+  	height: 42px;
+  	font-family: BellMT;
+  	font-size: 14px;
+  	line-height: 1.5;
+  	color: #39393a;
+  	margin-top:178px;
+}
+.product-list-content-2-single-4{
+	width: 18.14%;
+	height:19px;
+	margin-top: 5px;
+}
+.product-list-content-2-single-5{
+	clear: both;
+	margin-top: 5px;
+	width: 45%;
+	height:19px;
+}
+.product-list-content-2-single-6{
+  margin-top: 8px;
+  clear: both;
+  width: 91px;
+  height: 17px;
+  font-family: LucidaGrande;
+  font-size: 11px;
+  text-align: center;
+  color: #4b4b4b;
+}
+.product-list-content-2-single-6 .text-style-productList-1 {
+  color: #f43d11;
+}
+.screenshot-handmade-shopcmsmastersnet-2017-03-22-04-16-51 {
+  width: 47.30%;
+  height: 355px;
+  float: left;
+  margin-left: 9.49%;
+}
+
+.screenshot-handmade-shopcmsmastersnet-2017-03-22-04-16-52{
+  width: 47.05%;
+  height: 384px;
+  margin-top: 80px;
+  float: left;
+}
+
+.Duis-autem-vel-eum-aboutus2 {
+  width: 366px;
+  height: 312px;
+  font-family: BellMT;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #7b726f;
+  float: left;
+  margin-left: 4.49%;
+  margin-top: 90px;
+}
+
+.Rectangle-aboutus8 {
+  width: 100%;
+  height: 12px;
+  margin-top: 0px;
+  background-color: #f8f7f5;
+}
+
+.aboutus-brands-title{
+  font-family: BellMT;
+  font-size: 22px;
+  text-align: center;
+  color: #272220;
+  margin-left: 47.11%;
+  width:6.18%;
+  height:;
+  margin-top: 55px;
+}
+
+.aboutus-brands{
+	margin-left: 11.52%;
+	width:77.43%;
+	height:161px;
+	margin-top:52px;
+	margin-bottom: 130px;
+}
+
+.aboutus-Bitmap-brand{
+	margin-left: 11px;
+	width: 15.15%;
+  	height: 159px;
+  	border: solid 1px #979797;
+}

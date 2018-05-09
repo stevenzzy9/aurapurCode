@@ -1,0 +1,359 @@
+a:link {color: #999999;}
+a:visited {color: #999999;}
+
+a:hover {
+	color: #333333;
+	text-decoration: none;/*remove the underline when hover*/
+}
+
+a:active  {color: #999999;}
+
+#topbar {
+	background-color: #ed8ca7;
+	color: white;
+}
+
+#search {
+	border-radius:18px;
+	background-color:#fff;
+	border-color:#e66b8c;
+}
+
+#search-block{
+	overflow: hidden;
+	white-space: nowrap;
+	/*margin:0.5em;
+	max-width: 450px;*/
+}
+
+#search-icon {
+	position:absolute;
+	right:4em;
+	top:3.7em;
+	/*float:right;
+	margin:20px;*/
+	color:#e66b8c;
+}
+
+#title-small{
+	color:#e66b8c;
+}
+
+/*to keep cart and notification icons in the same line*/
+#cart, #notification{
+	display:inline;
+}
+
+#rectangle {
+	border: solid 0.5px #d9d9d9;
+	box-shadow: 0 2px 4px 0 #fea4a8;
+}
+
+/* 
+the text in the rectangles
+font seems not right 
+*/
+#rect_text {
+	font-family: OpenSans;
+	letter-spacing: 2.5px;
+	color: #272220;
+}
+
+footer {
+	background-color: #f5dae1;
+	background-position: center;
+}
+
+#about-us {
+	font-family: SourceSansPro;
+	font-weight: 300;
+	line-height: 1.85;
+	color: #4a4a4a;
+}
+
+/***************************************
+vedioWrapper:
+make video iframe responsive
+***************************************/
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	/*padding-top: 25px;*/
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+/***************************************
+masonry style sheet
+https://codepen.io/desandro/pen/osFxj
+***************************************/
+
+* { box-sizing: border-box; }
+
+.grid {
+  background: #eee;
+  max-width: 80%;
+  padding: 0%;
+}
+
+/* clearfix */
+
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+
+/* ---- grid-item ---- */
+/*
+.grid-item {
+	float: left;
+	display: inline-block;
+    background: #fff;
+    padding: 1em;
+    margin: 0 0 1.5em;
+    width: 50%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    
+}*/
+
+/* 100 100 */
+@media only screen and (max-width: 649px) {
+	.item {
+		
+		padding: 1em;
+		float: left;
+		display: inline-block;
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+	}
+	
+	.grid-sizer, .item{
+		width: 100%;
+	}
+	
+	
+	.item--first {
+		width: 100%;
+	}
+}
+
+/* 100 50 */
+@media only screen and (min-width: 650px) {
+	.item {
+		
+		padding: 1em;
+		float: left;
+		display: inline-block;
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+	}
+	
+	.grid-sizer, .item{
+		width: 50%;
+	}
+	
+	.item--first {
+		width: 100%;
+	}
+}
+
+/* 66.6 33.3 */
+@media only screen and (min-width: 1000px) {
+	.item {
+		
+		padding: 1em;
+		float: left;
+		display: inline-block;
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+	}
+	
+	.grid-sizer, .item{
+		width: 33.3%;
+	}
+	
+	.item--first {
+		width: 66.6%;
+	}
+}
+
+/* 50 25 */
+@media only screen and (min-width: 1200px) {
+	.item {
+		
+		padding: 1em;
+		float: left;
+		display: inline-block;
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+	}
+	
+	.grid-sizer, .item{
+		width: 25%;
+	}
+	
+	.item--first {
+		width: 50%;
+	}
+}
+
+/* 40 20 */
+@media only screen and (min-width: 1600px) {
+	
+    .item {
+		padding: 1em;
+		float: left;
+		display: inline-block;
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+    }
+	
+	.grid-sizer, .item{
+		width: 20%;
+	}
+	
+	.item--first {
+		width: 40%;
+	}
+}
+
+/*used by mainpage*/
+.item-content{
+	/*margin:1em;*/
+	border-radius:10px;
+	background:#fff;
+	
+}
+
+/*the following part is used by coco cash page*/
+.coco-cash-background{
+	/*background: #eee;*/
+	/*z-index:-2;*/
+	padding: 0 10%;
+}
+
+.coco-cash-item{
+	/*border-style:solid;*/
+	/*border-width: 1px;*/
+	padding: 1em;
+	margin: 1em;
+	background: #ffffff;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	position: relative;
+	
+}
+
+.coco-cash-tag-1{
+	z-index: 2;
+	padding: 0px;
+	height: 3em;
+	margin: 1em;
+	background-image: url('./tag_main.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	max-width: 8em;
+	position: relative;
+	left: -43px;
+}
+
+.coco-cash-tag-2{
+	z-index: 2;
+	background-size: auto 100%;
+	height: 3em;
+	margin: 0;
+	background-image: url('./tag_front.png');
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+.coco-cash-product-image{
+	position: relative;
+	top: -5em;
+	/*z-index: 1;*/
+	width: 100%;
+	align-content: center;
+	margin-bottom: -3em;
+	
+}
+
+/*the following part is used by latest story page*/
+/*
+.latest-story-item{
+	
+}
+*/
+
+.latest-story-tag{
+	font-family: "OpenSans";
+	color: #a8a8a8;
+	padding-left: 1em;
+}
+
+/*
+use media @ width to remove dashed border when 
+page width can not have main article col and 
+side bar row in the same row
+*/
+.latest-story-side-bar{
+	border-left: 1px dashed #ededed;
+	
+}
+
+.latest-story-side-bar-titles{
+	/*border-bottom: 1px solid #ededed;*/
+	margin-bottom: 0px;
+}
+
+.latest-story-side-bar-contents{
+	border-bottom: 1px dashed #ededed;
+	
+}
+
+#latest-story-search-block{
+	overflow: hidden;
+	white-space: nowrap;
+	width: 100%;
+}
+
+#latest-story-search {
+	border-radius:18px;
+	background-color:#fff;
+	border-color:#ededed;
+}
+
+#latest-story-search-icon {
+	position:absolute;
+	right:3em;
+	top:0.7em;
+	/*float:right;
+	margin:20px;*/
+	color:#ededed;
+}
+
+/*COCO STAR*/
+.coco-star-item{
+	background-color: #eee;
+	padding: 1em;
+	
+	margin: 0 10%;
+}
+
+.coco-star-user{
+	padding: 1em;
+}

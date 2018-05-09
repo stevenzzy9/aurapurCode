@@ -1,0 +1,355 @@
+body{
+	background-color: #fffdfd;
+}
+.mask{
+	width:100%;
+	height:4415px;
+	position: absolute;
+	z-index: 1000;
+	background-color: #000000;
+	filter: opacity(24%);
+	display: block;
+}
+.adv{
+	width:50.28%;
+	height: 491px;
+	margin-left: 25%;
+	margin-top: 489px;
+	position: absolute;
+	z-index: 2000;
+	display: block;
+}
+.mask-close-button{
+  width: 12.77%;
+  height: 42px;
+  line-height: 42px;
+  margin-left: 43.61%;
+  margin-top: 860px;
+  background-color: #000000;
+  font-family: BellMT;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  position: absolute;
+  z-index: 3000;
+  display: block;
+}
+.mask-close-button:hover{
+	color: #000000;
+	background-color: #ffffff;
+	cursor: pointer;
+	border:solid 1px #000000;
+}
+.Rectangle-1000{
+	border: solid 1px #f9859b;
+	width: 27.35%;
+	margin-left:0;height: 37px;
+	margin-top: 17px;
+}
+.Rectangle-1000 img{
+	width:4.5%;
+	height:37px;
+	position: absolute;
+	z-index: 500;
+}
+.navTitle1{
+	width: auto;
+	margin-left: 4%;
+	height:37px;
+	font-family: SourceSansPro-Regular;
+  	font-size: 16px;
+  	font-weight: 300;
+  	letter-spacing: 1px;
+  	text-align: left;
+  	color: #4a4a4a;
+}
+.navTitle1:hover{
+	color:#f43d11;
+}
+.pink_line{
+	clear: both;
+	width:10.5%;
+	height:2px;
+	border-bottom:  solid 3px #f9859b;
+	margin-top: 0;
+	margin-left: 13.2%;
+}
+.pink_words{
+	clear: both;
+	width:200%;
+	height:30px;
+	font-family: SourceSansPro;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-align: left;
+  color: #f9859b;
+  margin-top: 16px;
+  margin-left: -20.5%;
+}
+.home-page-bigpic {
+  width: 100%;
+  height: 542px;
+  background-color: black;
+}
+.main_page_pic1{
+	width:27.26%;
+	height:249px;
+	background-color: green;
+	margin-left: 2%;
+	float: left;
+	margin-top: 16px;
+	background-image:url("../images/first2.png");
+	background-size: 100% 100%;
+}
+.main_page_pic1_words_1 a{
+	font-family: SourceSansPro;
+  font-size: 12px;
+  text-align: center;
+  color: #f43d11;
+  cursor: pointer;
+  text-decoration: none;
+}
+.main_page_pic1_words_1{
+	clear: both;
+	width: 94.25%;
+	height:55px;
+	opacity: 0.75;
+  	background-color: #ffe0e6;
+  	font-family: SourceSansPro;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 0.9px;
+  color: #000000;
+  padding-top: 7px;
+  padding-left: 1%;
+  margin-left: 2%;
+  margin-top: 130px;
+}
+.main_page_pic1_words_2{
+	width: 40.25%;
+	height:16px;
+	font-family: SourceSansPro;
+  	font-size: 12px;
+  	letter-spacing: 0.9px;
+  	text-align: center;
+  	color: #272220;
+  	margin-top: 30px;
+}
+.main_page_pic3{
+	width:27.26%;
+	height:170px;
+	background-color: #d7f5ea;
+	margin-left: 2%;
+	float: left;
+	margin-top: 10px;
+}
+.thefounder{
+	font-family: SourceSansPro;
+  font-size: 12px;
+  letter-spacing: 0.9px;
+  text-align: left;
+  color: #272220;
+  margin-top: 10px;
+  margin-left: 6%;
+}
+.main-page-pic3-pic{
+	width: 70px;
+  	height: 68.8px;
+  	float: left;
+  	margin-left:4%;
+  	margin-top: 18.3px;
+
+}
+.main-page-pic3-words1{
+	width:63%;
+	 height: 65px;
+  font-family: SourceSansPro;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 0.9px;
+  color: #272220;
+  float: left;
+  margin-left: 4%;
+  margin-top: 18.3px;
+}
+.main-page-pic3-words2{
+	clear:both;
+	float: left;
+	 height: 15px;
+  font-family: SourceSansPro;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 0.9px;
+  text-align: left;
+  color: #272220;
+  margin-top: 9px;
+  margin-left: 5%;
+}
+.main_page_pic2{
+	width:68.34%;
+	height:427px;
+	margin-right: 1.3%;
+	float: right;
+	margin-top: 16px;
+}
+.product-list-content{
+	margin-left: 10.33%;
+	width: 78.34%;
+	height: 450px;
+	margin-bottom: 15px;
+	border-bottom:solid 3px #d9d9d9;
+	background-color: #ffffff;
+}
+.product-list-content-1{
+	width:64.47%;
+	height:;
+	margin-left: 35.53%;
+	margin-top: 30px;
+	font-family: BellMT;
+  	font-size: 22px;
+  	text-align: center;
+  	color: #272220;
+}
+
+.See-More {
+  font-family: BellMT;
+  font-size: 16px;
+  text-align: left;
+  float: right;
+  margin-right: 6%;
+  color: #f43d11;
+}
+.See-More a{
+	text-decoration: none;
+	color:#f43d11;
+}
+.product-list-content-2{
+	width: 100%;
+	height: 370px;
+	margin-top: 30px;
+}
+.product-list-content-arror{
+	width:10px;
+	height:20px;
+	float: left;
+	margin-top: 15%;
+}
+.product-list-content-2-line{
+	width:100%;
+	height:351px;
+	margin-top: 70px;
+	float: left;
+}
+
+.product-list-content-2-single{
+	width:18.95%;
+	height: 351px;
+	margin-left: 5.8%;
+	float: left;
+}
+
+.product-list-content-2-single-1{
+	width:29.31%;
+	height:58px;
+
+}
+.product-list-content-2-single-2{
+	width:12.10%;
+	height:203px;
+	position: absolute;
+	margin-top: -60px;
+	margin-left: 0.1%;
+	float: left;
+}
+.product-list-content-2-single-3{
+	width: 100%;
+  	height: 42px;
+  	font-family: BellMT;
+  	font-size: 14px;
+  	line-height: 1.5;
+  	color: #39393a;
+  	margin-top:100px;
+}
+.product-list-content-2-single-4{
+	width: 18.14%;
+	height:19px;
+	margin-top: 5px;
+}
+.product-list-content-2-single-5{
+	clear: both;
+	margin-top: 5px;
+	width: 45%;
+	height:19px;
+}
+.product-list-content-2-single-6{
+  margin-top: 8px;
+  clear: both;
+  width: 140px;
+  height: 17px;
+  font-family: LucidaGrande;
+  font-size: 11px;
+  text-align: left;
+  color: #4b4b4b;
+}
+.product-list-content-2-single-6 .text-style-productList-1 {
+  color: #f43d11;
+}
+.screenshot-handmade-shopcmsmastersnet-2017-03-22-04-16-51 {
+  width: 47.30%;
+  height: 355px;
+  float: left;
+  margin-left: 9.49%;
+}
+
+.screenshot-handmade-shopcmsmastersnet-2017-03-22-04-16-52{
+  width: 47.05%;
+  height: 384px;
+  margin-top: 80px;
+  float: left;
+}
+
+.Duis-autem-vel-eum-aboutus2 {
+  width: 366px;
+  height: 312px;
+  font-family: BellMT;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #7b726f;
+  float: left;
+  margin-left: 4.49%;
+  margin-top: 90px;
+}
+
+.Rectangle-aboutus8 {
+  width: 100%;
+  height: 12px;
+  margin-top: 0px;
+  background-color: #f8f7f5;
+}
+
+.aboutus-brands-title{
+  font-family: BellMT;
+  font-size: 22px;
+  text-align: center;
+  color: #272220;
+  margin-left: 47.11%;
+  width:6.18%;
+  height:;
+  margin-top: 55px;
+}
+
+.aboutus-brands{
+	margin-left: 5%;
+	width:90%;
+	height:161px;
+	margin-top:52px;
+	margin-bottom: 130px;
+}
+
+.aboutus-Bitmap-brand{
+	margin-left: 11px;
+	width: 15.15%;
+  	height: 159px;
+  	border: solid 1px #979797;
+}
