@@ -9,6 +9,14 @@ module.exports = function(app, passport) {
         res.render('index.ejs', { user : req.user });
     });
 
+    app.get('/product', (req, res) => {
+	    res.render('product_detail_page.ejs');
+    });
+
+    app.get('/top_videos', (req, res) => {
+	    res.render('top_videos.ejs');
+    });
+
     // PROFILE SECTION =========================
     app.get('/profile', isLoggedIn, function(req, res) {
         res.render('profile.ejs', {
