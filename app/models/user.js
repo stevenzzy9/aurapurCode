@@ -1,3 +1,5 @@
+'use strict';
+
 // load the things we need
 var mongoose = require('mongoose');
 var bcrypt   = require('bcrypt-nodejs');
@@ -6,7 +8,7 @@ var bcrypt   = require('bcrypt-nodejs');
 var userSchema = mongoose.Schema({
 
     local            : {
-        username    : String,
+        username     : { type: String, unique: true, index: true},
         email        : String,
         password     : String
     },
@@ -41,5 +43,26 @@ userSchema.methods.validPassword = function(password) {
     return bcrypt.compareSync(password, this.local.password);
 };
 
+userSchema.statics.newLocalUser = async function(username, email, password) {
+    var user = await User.findLocalUserByUsername(username);
+    if (user) {
+        throw new Error('User: ' + username + ' already exists');
+    }
+    user = new User({
+        local: {
+            username: username,
+            email: email,
+            password: password
+        }
+    });
+    return await user.save();
+}
+
+userSchema.statics.findLocalUserByUsername = async function(username) {
+    return await User.findOne({'local.username': username});
+}
+
+const User = mongoose.model('User', userSchema)
+
 // create the model for users and expose it to our app
-module.exports = mongoose.model('User', userSchema);
+module.exports = User;
