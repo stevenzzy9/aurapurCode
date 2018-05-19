@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>coconut  -  influencer-based short video commerce platform</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+	
+	<!--main_page.css-->
+	<link rel="stylesheet" href="main_page.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+	<script src="masonry.pkgd.min.js"></script>
+    
+    <style>
+		#coco-cash-category, #see-more{
+			display: inline;
+		}
+		
+		
+    </style>
+</head>
+
+<body>
+    
+	<% include partials/heading.ejs %>
+	
+
+	<br>
+	
+	<!--title image-->
+	<div class="text-center" style="margin:0 10%; background-image: url('./title/6.png');background-repeat: no-repeat; background-size: cover;">
+		<h3 class="text-center" style="padding: 3em 3em 0 3em;">COCO COIN</h3>
+		<h4 class="text-center" style="padding: 0 3em 3em 3em; font-family: Didot; ">Make Video, Earn Money</h4>
+
+	</div>
+	
+	<!--dropsown menu-->
+	<div class="" align="right" style="margin: 0 10%;">
+		<table><!--table keep things in one line-->
+			<tr>
+				<td><h6>Sort By</h6></td>
+				<td><div class="dropdown">
+					<button class="btn btn-outline-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true">
+					Price: Low to high
+					</button>
+					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+						<a class="dropdown-item" href="#">option 1</a>
+						<a class="dropdown-item" href="#">option 2</a>
+						<a class="dropdown-item" href="#">option 3</a>
+					</div>
+				</div></td>
+			</tr>
+		</table>
+	</div>
+	
+	
+	<div class="coco-cash-background">
+		
+		
+
+
+		
+		<div id="coco-cash-category"><h4>SKIN CARE</h4></div> 
+		<div id="see-more"><a href="#" align="right" ><h6>See More</h6></a></div>
+		
+		
+		<div class="row">
+		<!--coco cash item-->
+		<div class="col-lg-3 col-md-6">
+		  <div class="coco-cash-item">
+				<!--tag part-->
+				<div class="coco-cash-tag-1">
+					<div class="coco-cash-tag-2">
+						<h5 style="color:white; padding:0.4em;">Earn $5</h5>
+					</div>
+				</div>
+
+				<img src="./product/product/1.png" class="coco-cash-product-image">
+				<h5 class="text-center">product_name
+				<br>product_price</h5>
+				
+				<!--rating in stars-->
+				<div class="stars text-center" style="color: #eb6989;">
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star-o" aria-hidden="true"></i>
+				</div>
+			  
+			  	<div class="">
+					<!--cart and notification should be displayed after user has signed in?-->
+					<a class="btn coco-cash-upload-btn" href="#" data-toggle="modal" data-target="#UploadVideo" >Upload Video</a>
+
+					<!--log in/sign up modal-->
+					<div id="UploadVideo" class="modal fade" role="dialog">
+						<br><br><br><br><br>
+						<div class="modal-dialog" style="max-width: 50em;">
+							<div class="modal-content" style="width: 100%;">
+								<div class="modal-header text-center">
+									<h4 class="modal-title">Upload Your Video</h4>
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+								</div>
+
+								<div class="modal-body">
+									<div class="container text-center" style="background-color: #e8e8e8; padding: 1em;">
+										<div style="border-style: dashed ; border-color: #777777; border-width: 1px;">
+										<img style="width: 30%;" src="./product/product/1.png">
+										<p><h6>100% pure</h6> product name </p>
+										<p> Drag and drop a video here 
+											<font style="color: #9b9b9b;">Or</font> 
+											<a href="#" style="color: #49a8f8; font-weight: 500;">browse</a>
+											for a file to upload
+										</p>
+										</div>
+									</div>
+								</div>
+
+								<div class=" text-center">
+									<button type="button" class="btn coco-cash-upload-cancel" data-dismiss="modal" ><h6>Cancel</h6></button>
+									<button type="button" class="btn coco-cash-upload-submit" data-dismiss="modal" ><h6>Upload</h6></button>
+								</div>
+								<br>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<!--end of coco cash item-->
+		
+		<!--coco cash item-->
+		<div class="col-lg-3 col-md-6">
+			<div class="coco-cash-item">
+				<!--tag part-->
+				<div class="coco-cash-tag-1">
+					<div class="coco-cash-tag-2">
+						<h5 style="color:white; padding:0.4em;">Earn $5</h5>
+					</div>
+				</div>
+
+				<img src="./product/product/2.png" class="coco-cash-product-image">
+				<h5 class="text-center">product_name
+				<br>product_price
+				</h5>
+				
+				<!--rating in stars-->
+				<div class="stars text-center" style="color: #eb6989;">
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star-o" aria-hidden="true"></i>
+				</div>
+				
+				<!--cart and notification should be displayed after user has signed in?-->
+					<a class="btn coco-cash-upload-btn" href="#" data-toggle="modal" data-target="#UploadVideo" >Upload Video</a>
+				
+			</div>
+		</div>
+		<!--end of coco cash item-->
+		
+		<div class="clearfix visible-xs"></div>	
+		
+		<!--coco cash item-->
+		<div class="col-lg-3 col-md-6">
+			<div class="coco-cash-item">
+				<!--tag part-->
+				<div class="coco-cash-tag-1">
+					<div class="coco-cash-tag-2">
+						<h5 style="color:white; padding:0.4em;">Earn $5</h5>
+					</div>
+				</div>
+
+				<img src="./product/product/4.png" class="coco-cash-product-image">
+				<h5 class="text-center">product_name
+				<br>product_price
+				</h5>
+				
+				<!--rating in stars-->
+				<div class="stars text-center" style="color: #eb6989;">
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star-o" aria-hidden="true"></i>
+				</div>
+				
+				<!--cart and notification should be displayed after user has signed in?-->
+					<a class="btn coco-cash-upload-btn" href="#" data-toggle="modal" data-target="#UploadVideo" >Upload Video</a>
+				
+			</div>
+		</div>
+		<!--end of coco cash item-->
+		
+		<!--coco cash item-->
+		<div class="col-lg-3 col-md-6">
+			<div class="coco-cash-item">
+				<!--tag part-->
+				<div class="coco-cash-tag-1">
+					<div class="coco-cash-tag-2">
+						<h5 style="color:white; padding:0.4em;">Earn $5</h5>
+					</div>
+				</div>
+
+				<img src="./product/product/2.png" class="coco-cash-product-image">
+				<h5 class="text-center">product_name
+				<br>product_price
+				</h5>
+				
+				<!--rating in stars-->
+				<div class="stars text-center" style="color: #eb6989;">
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star-o" aria-hidden="true"></i>
+				</div>
+				
+				<!--cart and notification should be displayed after user has signed in?-->
+					<a class="btn coco-cash-upload-btn" href="#" data-toggle="modal" data-target="#UploadVideo" >Upload Video</a>
+				
+			</div>
+		</div>
+		<!--end of coco cash item-->
+		</div>
+		<br>
+
+	
+		<br>
+		<h4>POPULAR VIDEOS THIS WEEK</h4>
+		<br>
+		
+		<img src="./title/seller_videos.png" class="img-fluid">
+	
+	</div>
+	
+	
+	
+    <footer>
+    <br>
+    <div class="container">
+	<br>
+    <div class="row">
+		
+        <div class="col-md-6">
+        <b>ABOUT US</b>
+		<br><p id="about-us" class="small">
+			Aura Pur is changing the way brands sell and consumers shop. We're helping customers discover new hidden gems from an array of product categories within the 
+		cosmetics world, while redefining the e-commerce experience with the use of videos unlike other traditional shopping platforms. With our AI-powered technology, 
+		we're offering customers a more enhanced shopping experience by easily helping them find the cosmetic products they seek. The innovative technology also offers 
+		brands more rich customer insights, and allows them to understand customer needs, all while scaling their business.
+
+        </p>
+        </div>
+        
+        <div class="col-md-3">
+        <p><b>USEFUL LINKS</b>
+        <br><a class="small" href="aboutus.html">About Us</a>
+        <br><a class="small" href="contactus.html">Contact Us</a>
+        <br><a class="small" href="shipping_and_returns.html">Shipping and Returns</a>
+        <br><a class="small" href="terms_and_consitions">Terms and Conditions</a>
+        </p>
+        </div>
+        
+        <!--not sure if icons are needed for these-->
+        <div class="col-md-3">
+        <p><b>FOLLOW US</b>
+        <br><a>Facebook</a>
+        <br><a>Instagram</a>
+        <br><a>Twitter</a>
+        <br><a>YouTube</a>
+        </p></div>
+    </div>
+    </div>
+    </footer>
+	
+	
+	<div class="text-center">
+	<p>Auru Pur 2017 | All Rights Reserved</p>
+	</div>
+	
+</body>
+
+<script>
+
+</script>
+</html>
